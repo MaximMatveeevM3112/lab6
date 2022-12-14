@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Upload Python Package
+name: Cade check
 
 on:
   commit_comment:
@@ -29,6 +29,7 @@ jobs:
         pip install -r requirments.txt
     - name: Run flake8
       run: flake8 .
-    - name: Run mypy .
+    - name: Run mypy
+      run: mypy .
     
     
