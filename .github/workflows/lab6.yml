@@ -5,7 +5,6 @@ on:
   pull_request:
     branches: [ master ]
 
-# выполняемые действия
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
