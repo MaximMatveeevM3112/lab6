@@ -26,9 +26,11 @@ jobs:
       run: | 
         python -m pip install --upgrade pip
         pip install PyInstaller
+        
+        
     - name: Test with pytest
       run: |
-        python idelaba.py
+        python test_calc.py
     - name: Compile exe
       run: |
         pyinstaller --onefile main.py
