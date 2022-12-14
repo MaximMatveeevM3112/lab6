@@ -1,9 +1,7 @@
 
 name: Cade check
 
-on:
-  commit_comment:
-    types: [master]
+on: [commit_comment]
 
 
 jobs:
